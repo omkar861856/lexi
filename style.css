@@ -18,9 +18,17 @@ body {
     color: var(--text);
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
+}
+
+.page-wrapper {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
 }
 
 .container {
@@ -28,10 +36,30 @@ body {
     max-width: 500px;
     text-align: center;
     background: var(--card-bg);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 32px;
     box-shadow: 0 20px 40px -10px rgba(0,0,0,0.05);
     border: 1px solid var(--border);
+    height: fit-content;
+}
+
+.side-ad {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .page-wrapper { flex-direction: column; align-items: center; }
+    .side-ad { width: 100%; align-items: center; }
+}
+
+.top-ad, .bottom-ad {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 header h1 {
