@@ -27,99 +27,101 @@
     </script>
 </head>
 <body>
-    <!-- Top Horizontal Banner (Width > Height) -->
-    <div class="ad-top">
+    <!-- TOP HORIZONTAL AD (Strictly Above) -->
+    <div class="ad-top-wrapper">
         <script type="text/javascript">
             atOptions = { 'key' : '0aac8d9af57c46583c850a2dffcf2f22', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
         </script>
         <script type="text/javascript" src="//www.highperformanceformat.com/0aac8d9af57c46583c850a2dffcf2f22/invoke.js"></script>
     </div>
 
-    <div class="page-wrapper">
-        <!-- Left Vertical Skyscraper (Height > Width) -->
-        <div class="ad-side">
-            <script type="text/javascript">
-                atOptions = { 'key' : '37f89508357f724c55463b0a9d38145e', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
-            </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/37f89508357f724c55463b0a9d38145e/invoke.js"></script>
-        </div>
+    <div class="site-layout">
+        <!-- LEFT VERTICAL AD (Strictly Left) -->
+        <aside class="ad-sidebar left">
+            <div class="ad-unit">
+                <script type="text/javascript">
+                    atOptions = { 'key' : '37f89508357f724c55463b0a9d38145e', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+                </script>
+                <script type="text/javascript" src="//www.highperformanceformat.com/37f89508357f724c55463b0a9d38145e/invoke.js"></script>
+            </div>
+        </aside>
 
-        <div class="main-container">
-            <header>
-                <h1>Ecotron Lexi</h1>
-                <p>Spark your creativity with a single click.</p>
-            </header>
+        <!-- MAIN TOOL SECTION (Priority: Center, 70% Width) -->
+        <main class="tool-center-stage">
+            <div class="main-container">
+                <header>
+                    <h1>Ecotron Lexi</h1>
+                    <p>Spark your creativity with a single click.</p>
+                </header>
 
-            <main>
-                <div class="word-display" id="word-output">Inspire</div>
-                <div class="controls">
-                    <div class="config">
-                        <label>Number of words:</label>
-                        <input type="number" id="word-count" value="1" min="1" max="10">
+                <div class="tool-content">
+                    <div class="word-display" id="word-output">Inspire</div>
+                    <div class="controls">
+                        <div class="config">
+                            <label>Number of words:</label>
+                            <input type="number" id="word-count" value="1" min="1" max="10">
+                        </div>
+                        <button onclick="generateWords()" class="action-btn">Generate</button>
                     </div>
-                    <button onclick="generateWords()" class="action-btn">Generate</button>
+                    <div id="word-list" class="word-list"></div>
                 </div>
-                <div id="word-list" class="word-list"></div>
 
-                <article style="text-align: left; margin-top: 3rem; color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
-                    <h3 style="color: var(--text); margin-bottom: 1rem;">About Random Word Generator</h3>
+                <article class="seo-about">
+                    <h3>About Random Word Generator</h3>
                     <p>Ecotron Lexi is a privacy-focused random word generator tool. Whether you are looking for creative writing prompts, game inspiration, or brainstorming session ideas, Lexi provides instant results with zero tracking.</p>
                 </article>
-            </main>
 
-            <footer>
-                <div style="margin: 2rem 0; padding-top: 1rem; border-top: 1px solid var(--border);">
-                    <p style="margin-bottom: 10px; font-weight: 600;">Try our other tools:</p>
-                    <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; font-size: 0.8rem;">
-                        <a href="https://time.ecotron.co.in" style="color: var(--primary); text-decoration: none;">Time</a>
-                        <a href="https://sleep.ecotron.co.in" style="color: var(--primary); text-decoration: none;">Sleep</a>
-                        <a href="https://opti.ecotron.co.in" style="color: var(--primary); text-decoration: none;">Opti</a>
-                        <a href="https://whisper.ecotron.co.in" style="color: var(--primary); text-decoration: none;">Whisper</a>
-                        <a href="https://spin.ecotron.co.in" style="color: var(--primary); text-decoration: none;">Spin</a>
-                    </div>
+                <div class="related-tools">
+                    <p>Try our other tools:</p>
+                    <nav>
+                        <a href="https://time.ecotron.co.in">Time</a>
+                        <a href="https://sleep.ecotron.co.in">Sleep</a>
+                        <a href="https://opti.ecotron.co.in">Opti</a>
+                        <a href="https://whisper.ecotron.co.in">Whisper</a>
+                        <a href="https://spin.ecotron.co.in">Spin</a>
+                    </nav>
                 </div>
-                <p>&copy; 2026 Ecotron Infrastructure</p>
-            </footer>
-        </div>
+                <div class="copyright">&copy; 2026 Ecotron Infrastructure</div>
+            </div>
+        </main>
 
-        <!-- Right Vertical Skyscraper (Height > Width) -->
-        <div class="ad-side">
-            <script type="text/javascript">
-                atOptions = { 'key' : '9f8e5f7b2cbb419d20c3a8e9e7c5d33a', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
-            </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/9f8e5f7b2cbb419d20c3a8e9e7c5d33a/invoke.js"></script>
-
-            <div style="margin-top: 20px;">
+        <!-- RIGHT VERTICAL AD (Strictly Right) -->
+        <aside class="ad-sidebar right">
+            <div class="ad-unit">
+                <script type="text/javascript">
+                    atOptions = { 'key' : '9f8e5f7b2cbb419d20c3a8e9e7c5d33a', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };
+                </script>
+                <script type="text/javascript" src="//www.highperformanceformat.com/9f8e5f7b2cbb419d20c3a8e9e7c5d33a/invoke.js"></script>
+            </div>
+            <div class="ad-unit" style="margin-top: 20px;">
                 <script type="text/javascript">
                     atOptions = { 'key' : '3aafe35559fb584b5255d5ab5e68e332', 'format' : 'iframe', 'height' : 300, 'width' : 160, 'params' : {} };
                 </script>
                 <script type="text/javascript" src="//www.highperformanceformat.com/3aafe35559fb584b5255d5ab5e68e332/invoke.js"></script>
             </div>
-        </div>
+        </aside>
     </div>
 
-    <!-- Bottom Horizontal Banners (Width > Height) -->
-    <div class="ad-bottom" style="flex-direction: column; gap: 20px;">
-        <!-- Native Ad -->
+    <!-- BOTTOM HORIZONTAL ADS (Strictly Below, Displaced for Usability) -->
+    <div class="ad-bottom-wrapper">
         <script async="async" data-cfasync="false" src="https://developdomicile.com/2cd7e1ac2db1a93913a72db3d131e3b0/invoke.js"></script>
         <div id="container-2cd7e1ac2db1a93913a72db3d131e3b0"></div>
 
-        <!-- Extra Horizontal Banners -->
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <div class="extra-banners">
             <script type="text/javascript">
                 atOptions = { 'key' : '1878a1bc9b0f7c1ae44af26e7799a104', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };
             </script>
             <script type="text/javascript" src="//www.highperformanceformat.com/1878a1bc9b0f7c1ae44af26e7799a104/invoke.js"></script>
 
             <script type="text/javascript">
-                atOptions = { 'key' : 'a08535cca8814e2e57cb57303469bb7a', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
-            </script>
-            <script type="text/javascript" src="//www.highperformanceformat.com/a08535cca8814e2e57cb57303469bb7a/invoke.js"></script>
-
-            <script type="text/javascript">
                 atOptions = { 'key' : 'da77dca1a8359832cbb4479e7ac87c73', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
             </script>
             <script type="text/javascript" src="//www.highperformanceformat.com/da77dca1a8359832cbb4479e7ac87c73/invoke.js"></script>
+            
+            <script type="text/javascript">
+                atOptions = { 'key' : 'a08535cca8814e2e57cb57303469bb7a', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/a08535cca8814e2e57cb57303469bb7a/invoke.js"></script>
         </div>
     </div>
 
