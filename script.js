@@ -22,7 +22,7 @@ function generateWords() {
         list.innerHTML = '';
     } else {
         output.style.display = 'none';
-        list.innerHTML = selected.map(w => `<span class="word-item">${w}</span>`).join('');
+        list.innerHTML = selected.map(w => `<span class="word-tag">${w}</span>`).join('');
     }
     
     // Re-trigger animation
